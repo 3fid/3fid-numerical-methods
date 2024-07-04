@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Automaticky preklad z matlabu 
+# asi stoji dost zahovno
 
 def lichobeznik(funkce, odkud, kam, krok):
         xArr = np.arange(odkud, kam + krok, krok)

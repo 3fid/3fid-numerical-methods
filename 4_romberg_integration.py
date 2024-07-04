@@ -9,15 +9,13 @@ def lichobeznik(funkce, odkud, kam, krok):
         integral = 0
         for x in xArr:
             integral += funkce(x)
-        integral -= 0.5 * funkce(xArr[0]) + 0.5 * funkce(xArr[-1])
-        integral *= krok
+            integral -= 0.5 * funkce(xArr[0]) + 0.5 * funkce(xArr[-1])
+            integral *= krok
         return integral
 
 def romberg():
     f = lambda x: np.sin(x) * np.exp(np.cos(x))
-    
-    
-    
+       
     integ = np.zeros(4)
     h0 = 0.1
     

@@ -18,8 +18,8 @@ def js_divergence(P, Q, epsilon=1e-10):
     return 0.5 * kl_divergence(P, M, epsilon) + 0.5 * kl_divergence(Q, M, epsilon)
 
 # Příklad diskrétních pravděpodobností
-P = [0.0, 0.5, 0.5]
-Q = [0.6, 0.4, 0.0]
+P = [0.0, 0.5, 0.4, 0.0, 0.1, 0.0]
+Q = [0.6, 0.3, 0.0, 0.0, 0.0, 0.1]
 
-js_div = js_divergence(P, Q)
+js_div = js_divergence(P, Q, 1e-4)
 print(f"Jensen-Shannon divergence: {js_div}")

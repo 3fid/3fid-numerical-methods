@@ -21,5 +21,5 @@ def js_divergence(P, Q, epsilon=1e-10):
 P = [0.0, 0.5, 0.4, 0.0, 0.1, 0.0]
 Q = [0.6, 0.3, 0.0, 0.0, 0.0, 0.1]
 
-js_div = js_divergence(P, Q, 1e-4)
+js_div = js_divergence(P, Q, 1e-10)
 print(f"Jensen-Shannon divergence: {js_div}")
